@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100vw;
+    /* background-color: blueviolet; */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* header styling */
+header{
+    height: 12vh;
+    width: 95%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    position: sticky;
+}
+
+.logo{
+    /* background-color: black; */
+    height: 100px;
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* color: white; */
+    
+}
+
+.logo img{
+    height: 50%;
+}
+
+.location-icon{
+    display: flex;
+    height: 50px;
+    width: 115px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location-icon p{
+    color: black;
+    font-size: 13px;
+}
+
+.material-symbols-outlined{
+    color: red;
+    font-size: 15px;
+}
+
+nav{
+    /* background-color: yellow; */
+    /* height: 100px; */
+    width: 450px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.nav-home{
+    color: red;
+}
+
+.shopping-cart{
+    /* background-color: black; */
+    /* height: 100px; */
+    width: 150px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.hamburger-menu{
+    visibility: hidden;
+}
+
+
+/* main styling */
+
+main{
+    width: 95%;
+    height: 63vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu-text{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.welcome-text{
+    height: 27vh;
+    /* background-color: black; */
+    color: red;
+    margin-top: 120px;
+}
+
+.welcome-text p{
+    font-size: 25px;
+}
+
+.welcome-text h1{
+    font-size: 90px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.welcome-text .sub-text{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: red;
+    margin-top: 10px;
+}
+
+.main-cta{
+    height: 20vh;
+    margin-top: 20px;
+    color: red;
+    /* background-color: aqua; */
+}
+
+.main-cta .cta-text{
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.main-cta-btn{
+    margin-top: 6px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    gap: 35px;
+}
+
+.main-cta-btn .material-symbols-outlined{
+    color: white;
+    font-size: 40px;
+}
+
+.main-cta-btn button{
+    height: 100px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    background-color: red;
+    margin-right: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.main-cta-btn button p{
+    margin-top: 5px;
+}
+
+.main-menu-image{
+    width: 50%;
+    height: 100%;
+    /* background-color: green; */
+}
+
+.main-menu-image img{
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* discover menu section */
+
+section{
+    height: 100vh;
+    width: 95%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    height: 50%;
+    width: 90%;
+    text-align: center;
+    /* margin-left: auto; */
+    
+}
+
+.menu-images{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    place-content: center;
+    margin-top: 20px;
+}
+
+.menu-images img{
+    height: 200px;
+    border-radius: 20px;
+}
+
+
+/* ############## tablet view ################ */
+@media(max-width: 1024px){
+    nav{
+        display: none;
+    }
+
+    .hamburger-menu{
+        visibility: visible;
+        display: block !important;
+    }
+
+    .shopping-cart{
+        justify-content: space-around;
+    }
+    header{
+    width: 95%;
+    height: 10vh;
+   } 
+
+   main{
+    height: 44vh;
+    width: 95%;
+    margin-top: 25px;
+   }
+
+   .main-menu-text{
+    width: 50%;
+    }
+
+    .welcome-text{
+    margin-top: 5px;
+    height: 17vh;
+    } 
+
+    .welcome-text p{
+        font-size: 25px;
+    }
+
+    .welcome-text h1{
+        font-size: 59px;
+        line-height: 60px;
+    }
+
+    .welcome-text .sub-text{
+        visibility: hidden;
+    }
+
+    .main-cta{
+        margin-top: 26px;
+    }
+
+    .main-cta .cta-text{
+        font-size: 20px;
+    }
+
+    .main-cta-btn{
+        margin-top: 6px;
+    }
+
+    .main-cta-btn button{
+        height: 100px;
+        width: 150px;
+        border: none;
+        border-radius: 20px;
+        background-color: red;
+        margin-right: 0;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .main-cta-btn button p{
+        margin-top: 5px;
+    }
+
+    .main-menu-image{
+        width: 50%;
+    }
+   
+}
+
+/* mobile view */
+@media(max-width: 768px){
+
+    .logo{
+        justify-content: left;
+    }
+
+    .location-icon{
+        margin-left: 10px;
+    }
+
+    header{
+    width: 95%;
+    height: 18vh;
+   } 
+
+   main{
+    height: 90vh;
+    width: 90%;
+    display: block;
+    text-align: center;
+    /* margin-top: 25px; */
+   }
+
+   .main-menu-text{
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    }
+
+    .welcome-text{
+    margin-top: 0;
+    height: 17vh;
+    } 
+
+    .welcome-text p{
+        font-size: 20px;
+    }
+
+    .welcome-text h1{
+        font-size: 60px;
+        line-height: 55px;
+    }
+
+    .welcome-text .sub-text{
+        visibility: hidden;
+    }
+
+    .main-cta{
+        margin-top: 20px;
+    }
+
+    .main-cta .cta-text{
+        font-size: 20px;
+    }
+
+    .main-cta-btn{
+        margin-top: 6px;
+        display: grid;
+        grid-template-columns: auto auto;
+        place-content: center;
+        gap: 20px;
+    }
+
+    .main-cta-btn button{
+        height: 100px;
+        width: 150px;
+        border: none;
+        border-radius: 20px;
+        background-color: red;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 0;
+    }
+
+    .main-cta-btn button p{
+        margin-top: 5px;
+    }
+
+    .main-menu-image{
+        width: 90%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-menu-image img{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 639px){
+
+    .main-menu-text{
+       height: 35vh;
+    }
+
+    .welcome-text{
+        height: 6vh;
+    }
+
+    .welcome-text p{
+        font-size: 20px;
+    }
+
+    .welcome-text h1{
+        visibility: hidden;
+    }
+
+    .welcome-text .sub-text{
+        visibility: visible;
+        font-size: 15px;
+    }
+}
