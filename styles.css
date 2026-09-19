@@ -24,6 +24,8 @@ header{
     justify-content: space-between;
     align-items: center;
     font-family: "Montserrat", sans-serif;
+    background-color: white;
+    top: 0;
     position: sticky;
 }
 
@@ -99,7 +101,7 @@ nav a{
 
 main{
     width: 95%;
-    height: 63vh;
+    height: 500px;
     /* background-color: blue; */
     display: flex;
     justify-content: center;
@@ -113,7 +115,7 @@ main{
 }
 
 .welcome-text{
-    height: 27vh;
+    height: auto; /*i did changes here from 27 vh to auto*/
     /* background-color: black; */
     color: red;
     margin-top: 120px;
@@ -138,7 +140,7 @@ main{
 }
 
 .main-cta{
-    height: 20vh;
+    height: auto; /*i did changes here from 20vh to auto*/
     margin-top: 20px;
     color: red;
     /* background-color: aqua; */
@@ -183,13 +185,14 @@ main{
 .main-menu-image{
     width: 50%;
     height: 100%;
-    /* background-color: green; */
+    overflow: hidden;
+    background-color: green;
 }
 
 .main-menu-image img{
     height: 100%;
-    overflow: hidden;
     width: 100%;
+    object-fit: cover;
 }
 
 /* discover menu section */
@@ -211,12 +214,28 @@ section{
     
 }
 
+.menu-text{
+    color: red;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.menu-text hr{
+    width: 100px;
+    height: 10px;
+    margin: 0 auto;
+    background-color: red;
+    border-radius: 20px;
+    border: none;
+}
+
 .menu-images{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     place-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .menu-images img{
@@ -245,7 +264,7 @@ section{
    } 
 
    main{
-    height: 44vh;
+    height: 450px;
     width: 95%;
     margin-top: 25px;
    }
