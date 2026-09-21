@@ -5,6 +5,7 @@
 
 .container{
     min-height: 100vh;
+    height: auto;
     width: 100vw;
     /* background-color: blueviolet; */
     font-family: Arial, Helvetica, sans-serif;
@@ -17,6 +18,7 @@
 
 /* header styling */
 header{
+    max-width: 1500px;
     height: 90px;
     width: 95%;
     /* background-color: black; */
@@ -101,7 +103,10 @@ nav a{
 
 main{
     width: 95%;
+    max-width: 1500px;
     height: 63vh;
+    /* min-height: 63vh; */
+    /* height: auto; */
     /* background-color: blue; */
     display: flex;
     justify-content: center;
@@ -118,7 +123,7 @@ main{
     height: auto; /*i did changes here from 27 vh to auto*/
     /* background-color: black; */
     color: red;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .welcome-text p{
@@ -186,6 +191,7 @@ main{
 
 .main-menu-image{
     width: 50%;
+    /* height: auto; */
     height: 100%;
     overflow: hidden;
     background-color: green;
@@ -193,6 +199,7 @@ main{
 
 .main-menu-image img{
     height: 100%;
+    /* height: auto; */
     width: 100%;
     object-fit: cover;
 }
@@ -202,6 +209,7 @@ main{
 .menu-section{
     height: 87vh;
     width: 95%;
+    max-width: 1500px;
     background-color: blue;
     display: flex;
     justify-content: center;
@@ -248,6 +256,11 @@ main{
     border-radius: 20px;
 }
 
+.menu-images .overlay-text{
+    font-size: 20px;
+    position: absolute;
+}
+
 .menu-cta button{
     width: 200px;
     height: 50px;
@@ -268,8 +281,6 @@ main{
     background-color: red;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
 }
 
 .phone-download{
@@ -739,6 +750,74 @@ footer{
     .main-menu-image{
         width: 50%;
     }
+
+    /* discover section */
+
+    .menu-section{
+    height: 125vh;
+    width: 95%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    }
+
+    .menu{
+        height: 40vh;
+        width: 90%;
+        text-align: center;
+        margin-top: 50px;
+        /* margin-left: auto; */
+        
+    }
+
+    .menu-text{
+        color: red;
+        font-size: 25px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        /* margin-top: 100px; */
+    }
+
+    .menu-text hr{
+        width: 100px;
+        height: 8px;
+        margin: 0 auto;
+        background-color: red;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .menu-images{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+        place-content: center;
+        margin-top: 30px;
+    }
+
+    .menu-images img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .menu-images .overlay-text{
+        font-size: 20px;
+        position: absolute;
+    }
+
+    .menu-cta button{
+        width: 200px;
+        height: 50px;
+        background-color: red;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        margin-top: 50px;
+    }
    
 }
 
@@ -759,6 +838,8 @@ footer{
    } 
 
    main{
+    /* min-height: 90vh;
+    height: auto; */
     height: 90vh;
     width: 90%;
     display: block;
@@ -834,9 +915,86 @@ footer{
         width: 100%;
         text-align: center;
     }
+
+    /* discover section */
+
+    .menu-section{
+    height: 210vh;
+    /* padding: 100px 20px; */
+    width: 95%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    }
+
+    .menu{
+        height: 40vh;
+        width: 85%;
+        text-align: center;
+        margin-top: 50px;
+        /* background-color: brown; */
+        /* margin-left: auto; */
+        
+    }
+
+    .menu-text{
+        color: red;
+        font-size: 25px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        /* margin-top: 100px; */
+    }
+
+    .menu-text hr{
+        width: 100px;
+        height: 8px;
+        margin: 0 auto;
+        background-color: red;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .menu-images{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px;
+        place-content: center;
+        margin-top: 40px;
+    }
+
+    .menu-images img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .menu-images .overlay-text{
+        font-size: 20px;
+        position: absolute;
+    }
+
+    .menu-cta button{
+        width: 200px;
+        height: 50px;
+        background-color: red;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        margin-top: 50px;
+    }
 }
 
 @media(max-width: 639px){
+
+    .main{
+        height: 80vh;
+        width: 90%;
+        display: block;
+        text-align: center;
+    }
 
     .main-menu-text{
        height: 35vh;
@@ -859,4 +1017,76 @@ footer{
         display: block !important;
         font-size: 15px;
     }
+
+    /* discover section */
+
+    .menu-section{
+        height: 205vh;
+        /* padding: 100px 20px; */
+        width: 95%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu{
+        height: 40vh;
+        width: 85%;
+        text-align: center;
+        margin-top: 0;
+        /* background-color: brown; */
+        /* margin-left: auto; */
+        
+    }
+
+    .menu-text{
+        color: red;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        line-height: 1;
+        /* margin-top: 100px; */
+    }
+
+    .menu-text hr{
+        width: 100px;
+        height: 8px;
+        margin: 0 auto;
+        background-color: red;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .menu-images{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px;
+        place-content: center;
+        margin-top: 40px;
+    }
+
+    .menu-images img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .menu-images .overlay-text{
+        font-size: 20px;
+        position: absolute;
+    }
+
+    .menu-cta button{
+        width: 200px;
+        height: 50px;
+        background-color: red;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
 }
