@@ -7,7 +7,7 @@
 .container{
     /* min-height: 100vh; */
     height: 100%;
-    width: 100vw;
+    width: 100%;
     /* max-height: auto; */
     /* background-color: blueviolet; */
     font-family: Arial, Helvetica, sans-serif;
@@ -136,10 +136,10 @@ main{
 }
 
 .welcome-text h1{
-    font-size: 90px;
+    font-size: 70px;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    line-height: 100px;
+    line-height: 1;
 }
 
 .welcome-text .sub-text{
@@ -200,6 +200,7 @@ main{
     /* height: auto; */
     /* height: 100%; */
     overflow: hidden;
+
     /* background-color: green; */
 }
 
